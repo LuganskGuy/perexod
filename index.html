@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Переходная ссылка</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            margin-bottom: 20px;
+        }
+        
+        .btn:hover {
+            background-color: #333;
+            border-color: #333;
+            color: #fff;
+        }
+        
+        .image-container {
+            text-align: center;
+        }
+        
+        .image-container img {
+            width: 1280px;
+            height: 720px;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
-  <h1>Это переходная ссылка</h1>
-  <p>Нажмите на кнопку ниже, чтобы перейти на сайт:</p>
-  <a href="https://luganskguy.github.io/LuganskBiography" target="_blank">Сайт LuganskBiography</a>
-  <br><br>
-  <button onclick="window.location.href = 'https://luganskguy.github.io/LuganskBiography';">Перейти на сайт</button>
+    <div class="image-container">
+        <!-- Вставьте ссылку на изображение между src и alt в теге img -->
+        <img src="image/dfsaas.png" alt="Картинка">
+    </div>
+    
+    <div style="text-align: center;">
+        <a class="btn" href="https://luganskguy.github.io/LuganskBiography">Погнали!</a>
+    </div>
 </body>
 </html>
